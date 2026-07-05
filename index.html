@@ -7,11 +7,12 @@
   <meta name="description" content="V&G Logistic — nowoczesna firma transportowa z Sandy Shores, obsługująca Los Santos i Blaine County." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-noise"></div>
+  <div class="page-bg" aria-hidden="true"></div>
+
   <header class="navbar" id="top">
     <a class="brand" href="#top" aria-label="V&G Logistic">
       <img src="assets/vg-logo.png" alt="V&G Logistic" />
@@ -19,7 +20,7 @@
     </a>
     <nav>
       <a href="#firma">Firma</a>
-      <a href="#rozwoj">Rozwój</a>
+      <a href="#flota">Flota</a>
       <a href="#zarzad">Zarząd</a>
       <a href="#partnerzy">Partnerzy</a>
       <a href="#regulamin">Regulamin</a>
@@ -29,27 +30,49 @@
   </header>
 
   <main>
-    <section class="hero section-pad">
-      <div class="hero-bg-art" aria-hidden="true">
-        <span class="sun"></span>
-        <span class="road"></span>
-        <span class="mountains"></span>
-        <span class="truck-line"></span>
+    <section class="hero">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <span class="horizon"></span>
+        <span class="route route-a"></span>
+        <span class="route route-b"></span>
+        <span class="route route-c"></span>
+        <span class="glow glow-a"></span>
+        <span class="glow glow-b"></span>
       </div>
+
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow">Los Santos • Sandy Shores • Est. 2026</p>
           <h1>Dowozimy na czas.<br>Zawsze.</h1>
-          <p class="lead">Nowoczesna firma transportowa z siedzibą w Sandy Shores. Obsługujemy dostawy na terenie Los Santos i Blaine County, stawiając na organizację, terminowość i czysty profesjonalizm.</p>
+          <p class="lead">Nowoczesna firma transportowa z siedzibą w Sandy Shores. Obsługujemy dostawy na terenie Los Santos i Blaine County, stawiając na terminowość, porządek i profesjonalną organizację pracy.</p>
           <div class="hero-actions">
             <a class="btn primary" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Dołącz do firmy</a>
             <a class="btn ghost" href="#firma">Poznaj V&G</a>
           </div>
         </div>
-        <div class="hero-card reveal delay-1">
-          <img src="assets/vg-logo.png" alt="Logo V&G Logistic" />
-          <div class="card-line"></div>
-          <p>Premium logistics. Desert routes. Real standards.</p>
+
+        <div class="route-panel reveal delay-1" aria-label="Panel logistyczny V&G">
+          <div class="panel-top">
+            <span>Live Route Board</span>
+            <strong>V&G</strong>
+          </div>
+          <div class="map-card">
+            <div class="map-grid"></div>
+            <span class="pin pin-a"></span>
+            <span class="pin pin-b"></span>
+            <span class="pin pin-c"></span>
+            <svg viewBox="0 0 420 260" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M40 190 C120 120, 160 205, 225 130 S315 64, 382 96" />
+              <path class="thin" d="M58 70 C140 95, 180 40, 250 72 S330 152, 388 132" />
+            </svg>
+            <div class="city-tag tag-a">Sandy Shores</div>
+            <div class="city-tag tag-b">Los Santos</div>
+            <div class="city-tag tag-c">Blaine County</div>
+          </div>
+          <div class="panel-stats">
+            <div><b>1000+</b><span>kursów / tydzień</span></div>
+            <div><b>5</b><span>flota docelowa</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -65,20 +88,20 @@
       <div class="wrap split">
         <div class="section-title reveal">
           <p class="eyebrow">O firmie</p>
-          <h2>Transport premium dla Los Santos.</h2>
+          <h2>Transport z charakterem.</h2>
         </div>
         <div class="text-block reveal delay-1">
           <p>V&G Logistic buduje markę transportową opartą o przejrzystą hierarchię, regularne kursy i profesjonalne podejście do kierowców. Firma rozwija flotę, wzmacnia zaplecze operacyjne i przygotowuje kolejne kierunki dostaw.</p>
-          <p>Nie idziemy w chaos. Stawiamy na ludzi, którzy potrafią pracować w strukturze, szanują zasady i chcą budować firmę z charakterem.</p>
+          <p>Stawiamy na ludzi, którzy potrafią pracować w strukturze, szanują zasady i chcą budować firmę z mocnym, czystym wizerunkiem.</p>
         </div>
       </div>
     </section>
 
-    <section class="section-pad feature-section" id="rozwoj">
+    <section class="section-pad feature-section" id="flota">
       <div class="wrap">
         <div class="center-title reveal">
           <p class="eyebrow">Plan rozwoju</p>
-          <h2>Co budujemy dalej?</h2>
+          <h2>Flota, dostawy, zaplecze.</h2>
           <p>Składniki oraz części mechaniczne są elementem przyszłego rozwoju firmy — nie obecną usługą stałą.</p>
         </div>
         <div class="feature-grid">
