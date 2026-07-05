@@ -1,41 +1,23 @@
 # V&G Logistic
 
-Oficjalna strona internetowa firmy V&G Logistic działającej na GrandRP.
+Oficjalna strona V&G Logistic — Sandy Shores Freight Company.
 
-## Zawartość strony
-
-- informacje o firmie,
-- aktualności i rozwój V&G Logistic,
+## Zawartość
+- nowy amerykański wygląd strony,
+- własne logo V&G Logistic,
+- sekcja floty i aktualizacji firmy,
 - zarząd firmy,
-- statystyki transportowe,
-- partnerzy,
+- partnerzy z logotypami,
+- rekrutacja,
 - pełny regulamin IC/OOC,
-- link do Discorda.
+- Discord.
 
-## Aktualne informacje
-
-- około 1000 kursów tygodniowo,
-- 2 ciężarówki w firmie,
-- 3 ciężarówki w drodze od dealera,
-- dostawy części do mechanika z Czech,
-- dostawy składników do restauracji,
-- badania psychologiczne dla kandydatów na kierowców.
-
-## GitHub Pages
-
-Adres strony:
-https://ratoli03.github.io/vg-logistic/
-
-Po zmianie plików wystarczy zrobić Commit changes.
-
-## Pliki do wrzucenia
-
+## Publikacja na GitHub Pages
+Wrzuć do repozytorium wszystkie pliki z paczki:
 - index.html
 - style.css
 - script.js
+- README.txt
 - folder assets
 
-## Autor
-
-Projekt przygotowany dla V&G Logistic.
-Dyrektor Logistyki: Wade Wilson
+Potem kliknij Commit changes i poczekaj na GitHub Pages.
