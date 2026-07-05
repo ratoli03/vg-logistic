@@ -4,121 +4,191 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>V&G Logistic</title>
-  <meta name="description" content="V&G Logistic — profesjonalny transport na terenie Los Santos." />
+  <meta name="description" content="V&G Logistic — transport i logistyka na terenie Los Santos." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="cursor-glow"></div>
-
+  <div class="page-noise"></div>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="V&G Logistic">
-      <img src="assets/vg-logo.png" alt="V&G Logistic" />
+      <img src="assets/vg-logo.png" alt="V&G Logistic logo" />
       <span>V&G Logistic</span>
     </a>
-    <nav>
+    <button class="menu-btn" type="button" aria-label="Otwórz menu">☰</button>
+    <nav class="nav">
       <a href="#firma">Firma</a>
       <a href="#flota">Flota</a>
+      <a href="#kontrakty">Kontrakty</a>
       <a href="#rozwoj">Rozwój</a>
       <a href="#zarzad">Zarząd</a>
-      <a href="#partnerzy">Partnerzy</a>
       <a href="#regulamin">Regulamin</a>
+      <a class="nav-cta" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Discord</a>
     </nav>
-    <a class="discord" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Discord</a>
   </header>
 
   <main>
     <section id="home" class="hero">
-      <div class="map-bg"></div>
-      <div class="route route-a"></div>
-      <div class="route route-b"></div>
-      <div class="pin pin-a"><span></span></div>
-      <div class="pin pin-b"><span></span></div>
-      <div class="pin pin-c"><span></span></div>
+      <div class="hero-map" aria-hidden="true"></div>
+      <div class="route-line r1" aria-hidden="true"></div>
+      <div class="route-line r2" aria-hidden="true"></div>
+      <div class="route-line r3" aria-hidden="true"></div>
+      <span class="map-pin p1" aria-hidden="true"></span>
+      <span class="map-pin p2" aria-hidden="true"></span>
+      <span class="map-pin p3" aria-hidden="true"></span>
 
-      <div class="hero-inner reveal">
-        <p class="eyebrow">EST. 2026 • LOS SANTOS</p>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Los Santos • Est. 2026</p>
         <h1>V&G Logistic</h1>
-        <p class="lead">Dowozimy na czas. Zawsze.</p>
-        <p class="hero-text">Nowoczesna firma transportowa z siedzibą w Sandy Shores, obsługująca dostawy na terenie Los Santos. Czysta organizacja, realna hierarchia i flota budowana pod rozwój.</p>
+        <h2>Dowozimy na czas. Zawsze.</h2>
+        <p>Nowoczesna firma transportowa z siedzibą w Sandy Shores, obsługująca dostawy na terenie Los Santos. Stawiamy na porządek, terminowość i realny rozwój floty.</p>
         <div class="hero-actions">
           <a class="btn primary" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Dołącz do firmy</a>
-          <a class="btn ghost" href="#flota">Poznaj flotę</a>
+          <a class="btn subtle" href="#kontrakty">Zobacz kontrakty</a>
         </div>
       </div>
 
-      <aside class="ops-card reveal delay-1" aria-label="Panel operacyjny">
-        <div class="ops-head">
+      <aside class="ops-panel reveal delay-1">
+        <div class="ops-top">
           <span>Status operacyjny</span>
-          <b>ONLINE</b>
+          <b>Online</b>
         </div>
-        <div class="ops-row"><span>Kursy tygodniowo</span><strong>1000+</strong></div>
-        <div class="ops-row"><span>Ciężarówki</span><strong>2 + 3</strong></div>
-        <div class="ops-row"><span>Typy pojazdów</span><strong>2 / 4</strong></div>
-        <div class="progress"><i style="width:50%"></i></div>
-        <small>Rozbudowa floty: 50%</small>
+        <div class="ops-grid">
+          <div><strong>1000+</strong><span>kursów tygodniowo</span></div>
+          <div><strong>2</strong><span>aktywne ciężarówki</span></div>
+          <div><strong>3</strong><span>w drodze od dealera</span></div>
+          <div><strong>3</strong><span>podpisane umowy</span></div>
+        </div>
+        <div class="mini-map">
+          <span>Sandy Shores</span>
+          <i></i><i></i><i></i>
+          <b>Los Santos</b>
+        </div>
       </aside>
     </section>
 
-    <section id="firma" class="section split">
-      <div class="section-copy reveal">
+    <section id="firma" class="section two-col">
+      <div class="copy reveal">
         <p class="eyebrow">O firmie</p>
-        <h2>Minimalizm, porządek i profesjonalny transport.</h2>
-        <p>V&G Logistic działa w oparciu o jasną strukturę, odpowiedzialność pracowników i terminową realizację zleceń. Firma rozwija flotę, standardy rekrutacji i zaplecze operacyjne.</p>
+        <h2>Logistyka prowadzona jak marka premium.</h2>
+        <p>V&G Logistic rozwija się jako firma transportowa oparta o jasną hierarchię, sprawdzonych kierowców, aktywne kontrakty i flotę budowaną pod kolejne etapy działalności.</p>
       </div>
-      <div class="stats-grid reveal delay-1">
-        <div><strong>1000+</strong><span>kursów tygodniowo</span></div>
-        <div><strong>5</strong><span>ciężarówek w rozwoju</span></div>
-        <div><strong>2 / 4</strong><span>typy pojazdów</span></div>
-        <div><strong>3</strong><span>partnerów</span></div>
+      <div class="stat-cards reveal delay-1">
+        <article><strong>1000+</strong><span>kursów tygodniowo</span></article>
+        <article><strong>2 / 4</strong><span>typy pojazdów</span></article>
+        <article><strong>5</strong><span>ciężarówek w rozwoju</span></article>
+        <article><strong>2026</strong><span>rok startu</span></article>
       </div>
     </section>
 
     <section id="flota" class="section">
-      <div class="center reveal">
+      <div class="section-head reveal">
         <p class="eyebrow">Flota</p>
         <h2>Aktualnie dwa typy pojazdów. Docelowo cztery.</h2>
-        <p>Flota jest budowana etapowo — od pojazdów wdrożeniowych po zestawy dla doświadczonych kierowców.</p>
+        <p>Pojazdy są przypisane do poziomu doświadczenia kierowców oraz planowanego rozwoju firmy.</p>
       </div>
       <div class="fleet-grid">
         <article class="fleet-card reveal">
-          <span class="status active">Aktywny</span>
+          <span class="badge active">Aktywny</span>
           <h3>Jobuilt Longpath</h3>
-          <p>Pierwszy typ ciężarówki w naszej flocie, przeznaczony głównie dla nowych pracowników. Służy do wdrożenia, nauki tras oraz poznania standardów V&G Logistic.</p>
-          <b>Program wdrożeniowy</b>
+          <p>Pierwszy typ ciężarówki w firmie, przeznaczony dla nowych pracowników. Idealny do wdrożenia, nauki tras i poznania standardów V&G Logistic.</p>
+          <strong>Program wdrożeniowy</strong>
         </article>
         <article class="fleet-card reveal delay-1">
-          <span class="status active">Aktywny</span>
+          <span class="badge active">Aktywny</span>
           <h3>Packer Day Cab</h3>
-          <p>Drugi typ ciężarówki, przeznaczony dla doświadczonych kierowców realizujących bardziej wymagające zlecenia oraz regularny transport.</p>
-          <b>Dla doświadczonych kierowców</b>
+          <p>Drugi typ ciężarówki, przeznaczony dla doświadczonych kierowców wykonujących bardziej wymagające zlecenia i regularny transport.</p>
+          <strong>Dla doświadczonych</strong>
         </article>
-        <article class="fleet-card muted reveal delay-2">
-          <span class="status planned">W planach</span>
+        <article class="fleet-card planned reveal delay-2">
+          <span class="badge planned">W planach</span>
           <h3>MTL Haulking</h3>
-          <p>Trzeci typ ciężarówki planowany jako kolejny etap rozbudowy floty. Będzie przeznaczony do większych i cięższych zleceń firmowych.</p>
-          <b>Przyszły rozwój</b>
+          <p>Trzeci typ ciężarówki planowany jako kolejny etap rozbudowy floty. Docelowo będzie przeznaczony do cięższych zleceń firmowych.</p>
+          <strong>Przyszły rozwój</strong>
         </article>
-        <article class="fleet-card muted reveal delay-3">
-          <span class="status planned">Tajemnica</span>
+        <article class="fleet-card secret reveal delay-3">
+          <span class="badge secret">Tajemnica</span>
           <h3>Niespodzianka</h3>
-          <p>Czwarty typ pojazdu pozostaje tajemnicą i zostanie ujawniony w późniejszym etapie rozwoju V&G Logistic.</p>
-          <b>Coming soon</b>
+          <p>Czwarty typ pojazdu pozostaje zaplanowaną niespodzianką i zostanie ujawniony w kolejnym etapie rozwoju V&G Logistic.</p>
+          <strong>Coming soon</strong>
         </article>
       </div>
     </section>
 
-    <section id="rozwoj" class="section development">
-      <div class="section-copy reveal">
+    <section id="kontrakty" class="section contracts-section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Kontrakty i współprace</p>
+        <h2>Podpisane umowy</h2>
+        <p>Aktualne współprace V&G Logistic z partnerami operacyjnymi i gastronomicznymi.</p>
+      </div>
+      <div class="contract-grid">
+        <article class="contract-card reveal">
+          <div class="contract-logo"><img src="assets/del-perro.png" alt="Del Perro Pizza"></div>
+          <div class="contract-body">
+            <span class="badge active">Umowa aktywna</span>
+            <h3>Del Perro Pizza</h3>
+            <p>Długoterminowa współpraca partnerska obejmująca obsługę gastronomiczną, promocję marki oraz wzajemne wsparcie działań firmowych.</p>
+            <ul>
+              <li>100 darmowych zestawów dziennie dla pracowników V&G Logistic.</li>
+              <li>Priorytetowa realizacja zamówień i dostawy bez dodatkowych opłat do siedziby firmy.</li>
+              <li>Logo Del Perro Pizza na materiałach promocyjnych i naczepie V&G Logistic.</li>
+            </ul>
+            <details>
+              <summary>Szczegóły umowy</summary>
+              <p>Umowa została zawarta 05.07.2026 w Los Santos. V&G Logistic zobowiązuje się do cotygodniowej płatności 500.000$, promocji partnera podczas wydarzeń oraz umieszczenia logotypu w sekcji partnerów. Umowa jest zawarta na czas nieokreślony z 7-dniowym okresem wypowiedzenia.</p>
+            </details>
+          </div>
+        </article>
+
+        <article class="contract-card reveal delay-1">
+          <div class="contract-logo"><img src="assets/cantina.png" alt="Cantina Mexicana"></div>
+          <div class="contract-body">
+            <span class="badge active">Umowa aktywna</span>
+            <h3>Cantina Mexicana</h3>
+            <p>Współpraca gastronomiczna zapewniająca regularne zestawy dla firmy oraz rozliczenie po wykonanej dostawie.</p>
+            <ul>
+              <li>100 zestawów dziennie dla V&G Logistic.</li>
+              <li>Dostawy lub wydawanie zestawów w godzinach 16:00–20:00.</li>
+              <li>Płatność realizowana w każdą niedzielę po dostawie.</li>
+            </ul>
+            <details>
+              <summary>Szczegóły umowy</summary>
+              <p>Umowa została zawarta 07.05.2026 w Los Santos pomiędzy Cantina Mexicana reprezentowaną przez Josef Ferguson oraz V&G Logistics reprezentowaną przez Wade Wilson. Współpraca przewiduje płatność 500.000$ w każdą niedzielę po dostawie.</p>
+            </details>
+          </div>
+        </article>
+
+        <article class="contract-card reveal delay-2">
+          <div class="contract-logo"><img src="assets/ems.png" alt="EMS"></div>
+          <div class="contract-body">
+            <span class="badge active">Umowa aktywna</span>
+            <h3>Emergency Medical Services</h3>
+            <p>Współpraca medyczna obejmująca pomoc dla pracowników V&G Logistic podczas wykonywania pracy oraz zabezpieczenie podstawowego wyposażenia.</p>
+            <ul>
+              <li>Nieodpłatna pomoc medyczna dla pracowników podczas pracy.</li>
+              <li>Warunek: strój roboczy i plakietka firmowa.</li>
+              <li>Możliwość wydania lub dostarczenia 50 apteczek dla zarządu firmy.</li>
+            </ul>
+            <details>
+              <summary>Szczegóły umowy</summary>
+              <p>Umowa została zawarta 07.02.2026 w Los Santos pomiędzy V&G Logistics reprezentowaną przez Wade Wilson oraz EMS reprezentowanym przez Jack Kimono. V&G Logistics zobowiązuje się do cotygodniowej wpłaty 175.000$, a zakup 50 apteczek wynosi 30.000$.</p>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="rozwoj" class="section two-col development">
+      <div class="copy reveal">
         <p class="eyebrow">Kierunek rozwoju</p>
-        <h2>Firma nie stoi w miejscu.</h2>
-        <p>Dostawy składników oraz transport części do warsztatów traktujemy jako plan przyszłego rozwoju. Priorytetem jest stabilna flota, sprawdzeni kierowcy i lepsza organizacja.</p>
+        <h2>Rozwój bez przypadkowych ruchów.</h2>
+        <p>Dostawy składników oraz transport części dla warsztatów są planem przyszłego rozwoju. Najpierw stabilizujemy flotę, zespół i aktywne kontrakty.</p>
       </div>
       <div class="roadmap reveal delay-1">
         <div><span>01</span><p>Rozbudowa floty do 4 typów pojazdów.</p></div>
-        <div><span>02</span><p>Wdrożenie badań psychologicznych dla kandydatów na kierowców.</p></div>
+        <div><span>02</span><p>Badania psychologiczne dla kandydatów na kierowców.</p></div>
         <div><span>03</span><p>Przyszłe dostawy składników dla restauracji.</p></div>
         <div><span>04</span><p>Przyszły transport części dla warsztatów.</p></div>
         <div><span>05</span><p>Rekrutacja osób z doświadczeniem do zarządu.</p></div>
@@ -126,42 +196,30 @@
     </section>
 
     <section id="zarzad" class="section">
-      <div class="center reveal">
+      <div class="section-head reveal">
         <p class="eyebrow">Struktura</p>
         <h2>Zarząd V&G Logistic</h2>
       </div>
       <div class="team-grid">
-        <article class="person reveal"><span>Dyrektor Logistyki</span><h3>Wade Wilson</h3><p>Właściciel i główny odpowiedzialny za kierunek rozwoju firmy.</p></article>
+        <article class="person reveal"><span>Dyrektor Logistyki</span><h3>Wade Wilson</h3><p>Właściciel i osoba odpowiedzialna za główny kierunek rozwoju firmy.</p></article>
         <article class="person reveal delay-1"><span>Zastępca Dyrektora</span><h3>Vincent Davis</h3><p>Wsparcie zarządu, organizacja działań i kontrola funkcjonowania firmy.</p></article>
         <article class="person reveal delay-2"><span>Zastępca Dyrektora</span><h3>Carlo Gaviria</h3><p>Nadzór operacyjny oraz wsparcie bieżących decyzji.</p></article>
         <article class="person reveal delay-3"><span>Koordynator Logistyki</span><h3>Liza Wilson</h3><p>Organizacja pracy, rozwój pracowników i rekrutacja.</p></article>
         <article class="person reveal delay-3"><span>Koordynator Logistyki</span><h3>Logan Reyes</h3><p>Szkolenia, kontakt z kierowcami i wsparcie operacyjne.</p></article>
       </div>
-      <div class="join-board reveal">
+      <div class="join-card reveal">
         <h3>Poszukujemy osób do zarządu</h3>
-        <p>Do zespołu kierowniczego szukamy osób z doświadczeniem w organizacji pracy, prowadzeniu ludzi i odpowiedzialnym podejmowaniu decyzji.</p>
+        <p>Szukamy osób z doświadczeniem w organizacji pracy, prowadzeniu ludzi i odpowiedzialnym podejmowaniu decyzji.</p>
         <a class="btn primary" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Zgłoś się na Discordzie</a>
       </div>
     </section>
 
-    <section id="partnerzy" class="section partners">
-      <div class="center reveal">
-        <p class="eyebrow">Partnerzy</p>
-        <h2>Sieć współpracy</h2>
-      </div>
-      <div class="partners-row reveal delay-1">
-        <article><img src="assets/cantina.png" alt="Cantina Mexicana"><strong>Cantina Mexicana</strong><span>Restauracja meksykańska</span></article>
-        <article><img src="assets/ems.png" alt="EMS"><strong>EMS</strong><span>Wsparcie medyczne</span></article>
-        <article><img src="assets/del-perro.png" alt="Del Perro Pizza"><strong>Del Perro Pizza</strong><span>Dostawy gastronomiczne</span></article>
-      </div>
-    </section>
-
-    <section id="regulamin" class="section rules">
-      <div class="center reveal">
+    <section id="regulamin" class="section rules-section">
+      <div class="section-head reveal">
         <p class="eyebrow">Regulamin</p>
         <h2>Zasady V&G Logistic</h2>
       </div>
-      <div class="accordion reveal delay-1">
+      <div class="rules-accordion reveal delay-1">
         <details open><summary>I. Zasady IC — obowiązki i bezpieczeństwo</summary><p>Pracownicy są zobowiązani do punktualnego pojawiania się na zmianie oraz wykonywania powierzonych obowiązków. Każdy pracownik dba o dobry wizerunek firmy i nie uczestniczy w działalności przestępczej podczas pracy. Dostawy muszą być realizowane zgodnie z prawem. Zabronione są nielegalne wyścigi i stwarzanie zagrożenia na drodze. Każdy wypadek lub incydent należy zgłosić przełożonemu.</p></details>
         <details><summary>Towary, dokumentacja i pojazdy firmowe</summary><p>Każde uszkodzenie ciężarówki należy zgłosić przełożonemu oraz udokumentować zdjęciem na kanale firmowym. Pojazdy firmowe służą wyłącznie do realizacji zleceń V&G Logistic. Pracownik odpowiada za stan techniczny pojazdu, tankowanie i zgłaszanie napraw.</p></details>
         <details><summary>Hierarchia, problemy i nieobecności</summary><p>Każdy pracownik ma obowiązek słuchać poleceń przełożonych. Problemy i konflikty należy zgłaszać bezpośrednio do kierownictwa. Dłuższe nieobecności OOC należy zgłaszać na kanale firmowym. Spotkania odbywają się w niedzielę o 20:00, a nieobecność należy wcześniej usprawiedliwić.</p></details>
@@ -170,10 +228,11 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div><strong>V&G Logistic</strong><span>Dowozimy na czas. Zawsze.</span></div>
     <a href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Discord</a>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

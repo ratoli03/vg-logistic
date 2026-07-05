@@ -1,22 +1,19 @@
 # V&G Logistic
 
-Minimalistyczna strona premium dla V&G Logistic.
+Nowoczesna strona V&G Logistic.
 
-Pliki do wrzucenia na GitHub / Netlify:
+## Zawartość
 - index.html
 - style.css
 - script.js
-- folder assets
+- assets/ z logotypami oraz mapą Los Santos
 
-Strona zawiera:
-- tło z mapą Los Santos,
-- nowoczesny hero bez dużego logo,
-- flotę: Boxville i Packer Day Cab,
-- rozwój do 4 typów pojazdów,
-- partnerów z logotypami,
-- zarząd,
-- regulamin,
-- Discord.
+## Wgrywanie
+Wrzuć całą rozpakowaną zawartość folderu na GitHub albo Netlify.
+Nie wrzucaj samego ZIP-a.
 
-
-Aktualizacja floty: Jobuilt Longpath, Packer Day Cab, planowany MTL Haulking oraz czwarty typ jako niespodzianka.
+## Aktualne elementy
+- flota: Jobuilt Longpath, Packer Day Cab, MTL Haulking, niespodzianka
+- kontrakty: Del Perro Pizza, Cantina Mexicana, EMS
+- pełny regulamin
+- sekcja rekrutacji do zarządu
