@@ -1,12 +1,19 @@
 # V&G Logistic
 
-Nowoczesna strona V&G Logistic przygotowana pod GitHub Pages / Netlify.
+Minimalistyczna strona premium dla V&G Logistic.
 
-## Zawartość
+Pliki do wrzucenia na GitHub / Netlify:
 - index.html
 - style.css
 - script.js
-- assets/ z logami V&G i partnerów
+- folder assets
 
-## Ważne
-Na hosting wrzucaj rozpakowaną zawartość ZIP-a, nie sam plik ZIP.
+Strona zawiera:
+- tło z mapą Los Santos,
+- nowoczesny hero bez dużego logo,
+- flotę: Boxville i Packer Day Cab,
+- rozwój do 4 typów pojazdów,
+- partnerów z logotypami,
+- zarząd,
+- regulamin,
+- Discord.
