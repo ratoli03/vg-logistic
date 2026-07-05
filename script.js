@@ -1,7 +1,27 @@
-const menu=document.getElementById('menu'),nav=document.getElementById('nav');
-menu?.addEventListener('click',()=>nav.classList.toggle('open'));
-const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-const counters=document.querySelectorAll('[data-count]');
-const countIO=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target;const target=+el.dataset.count;let n=0;const step=Math.max(1,Math.ceil(target/60));const timer=setInterval(()=>{n+=step;if(n>=target){n=target;clearInterval(timer)}el.textContent=target>=1000?`${n}+`:n},18);countIO.unobserve(el)})},{threshold:.6});
-counters.forEach(c=>countIO.observe(c));
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.12});
+
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('nav');
+if(menu && nav){
+  menu.addEventListener('click',()=>{
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    nav.style.position = 'absolute';
+    nav.style.top = '76px';
+    nav.style.left = '14px';
+    nav.style.right = '14px';
+    nav.style.padding = '18px';
+    nav.style.flexDirection = 'column';
+    nav.style.background = 'rgba(6,6,6,.96)';
+    nav.style.border = '1px solid rgba(255,255,255,.12)';
+    nav.style.borderRadius = '20px';
+  });
+}
