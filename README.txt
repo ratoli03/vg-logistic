@@ -1,23 +1,22 @@
 # V&G Logistic
 
-Oficjalna strona V&G Logistic — Sandy Shores Freight Company.
+Oficjalna strona V&G Logistic działającej na GrandRP.
 
 ## Zawartość
-- nowy amerykański wygląd strony,
-- własne logo V&G Logistic,
-- sekcja floty i aktualizacji firmy,
-- zarząd firmy,
-- partnerzy z logotypami,
-- rekrutacja,
+- amerykański wygląd strony,
+- logo V&G Logistic,
+- sekcja zarządu,
+- statystyki firmy,
+- partnerzy z logotypami: Cantina Mexicana, EMS, Del Perro Pizza,
 - pełny regulamin IC/OOC,
-- Discord.
+- link do Discorda.
 
-## Publikacja na GitHub Pages
-Wrzuć do repozytorium wszystkie pliki z paczki:
+## Wrzucenie na GitHub
+Wrzuć do repozytorium wszystkie pliki:
 - index.html
 - style.css
 - script.js
 - README.txt
 - folder assets
 
-Potem kliknij Commit changes i poczekaj na GitHub Pages.
+Po wrzuceniu kliknij Commit changes i odśwież stronę przez Ctrl + F5.
