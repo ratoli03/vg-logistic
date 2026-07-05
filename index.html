@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>V&G Logistic | Sandy Shores Trucking</title>
+  <title>V&G Logistic | Sandy Shores Freight Company</title>
   <meta name="description" content="V&G Logistic — amerykańska firma transportowa z Sandy Shores na GrandRP." />
+  <link rel="icon" href="assets/vg-logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-noise"></div>
   <header class="site-header">
-    <a href="#home" class="brand">
-      <img src="assets/vg-logo.png" alt="V&G Logistic logo" />
+    <a href="#home" class="brand" aria-label="V&G Logistic">
+      <img src="assets/vg-logo.png" alt="V&G Logistic" />
       <div>
         <strong>V&G Logistic</strong>
-        <span>Sandy Shores Trucking</span>
+        <span>Sandy Shores Freight Co.</span>
       </div>
     </a>
     <nav class="nav" id="nav">
-      <a href="#about">Firma</a>
-      <a href="#stats">Statystyki</a>
+      <a href="#company">Firma</a>
+      <a href="#operations">Operacje</a>
       <a href="#board">Zarząd</a>
       <a href="#partners">Partnerzy</a>
       <a href="#rules">Regulamin</a>
@@ -29,55 +31,90 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-overlay"></div>
+      <div class="sun"></div>
+      <div class="mountains m1"></div>
+      <div class="mountains m2"></div>
+      <div class="road"></div>
+      <div class="truck-lines"><span></span><span></span><span></span></div>
+
       <div class="hero-content reveal">
-        <p class="eyebrow">Sandy Shores • San Andreas • Est. 2026</p>
-        <h1>American trucking, western grit, V&G standard.</h1>
-        <p class="lead">V&G Logistic to firma transportowa w klimacie USA — ciężki transport, szybka organizacja, profesjonalny zarząd i codzienna praca kierowców na najwyższym poziomie.</p>
+        <p class="eyebrow">Sandy Shores • Route 68 • San Andreas</p>
+        <h1>Heavy freight.<br>Desert roads.<br>V&G standard.</h1>
+        <p class="lead">Profesjonalna firma transportowa w amerykańskim klimacie: złoto, stal, czarny asfalt, pustynne trasy i konkretna organizacja pracy.</p>
         <div class="hero-actions">
           <a href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer" class="btn primary">Dołącz do Discorda</a>
-          <a href="#rules" class="btn secondary">Zobacz regulamin</a>
+          <a href="#partners" class="btn secondary">Zobacz partnerów</a>
         </div>
       </div>
-      <div class="hero-card reveal">
-        <img src="assets/vg-logo.png" alt="V&G Logistic" />
-        <h3>Dowozimy na czas. Zawsze.</h3>
-        <p>Nowy styl V&G Logistic: Sandy Shores, złoto, czerń, stal i klimat amerykańskiej drogi.</p>
-      </div>
+
+      <aside class="hero-emblem reveal">
+        <div class="emblem-ring"></div>
+        <img src="assets/vg-logo.png" alt="V&G Logistic logo" />
+        <div class="dispatch-card">
+          <small>Dispatch status</small>
+          <strong>Active convoy</strong>
+          <span>Sandy Shores → Los Santos</span>
+        </div>
+      </aside>
     </section>
 
-    <section class="section" id="about">
+    <section class="ticker" aria-label="Najważniejsze informacje">
+      <div><span>1000+ kursów tygodniowo</span><span>2 ciężarówki w firmie</span><span>3 nowe w drodze od dealera</span><span>Części mechaniczne z Liberty State</span><span>Dostawy dla restauracji</span><span>Badania psychologiczne kierowców</span></div>
+    </section>
+
+    <section class="section company" id="company">
       <div class="section-head reveal">
-        <p class="eyebrow">Company update</p>
-        <h2>Nowy rozdział V&G Logistic</h2>
-        <p>Firma rozwija flotę, partnerstwa i zaplecze logistyczne. Działamy z Sandy Shores, ale skala pracy rośnie z każdym tygodniem.</p>
+        <p class="eyebrow">American trucking company</p>
+        <h2>Z Sandy Shores na całe San Andreas</h2>
+        <p>V&G Logistic działa jak prawdziwa firma transportowa: flota, partnerzy, kierowcy, dyspozycja, regulamin i jasna struktura zarządzania.</p>
       </div>
-      <div class="cards three">
-        <article class="card reveal"><span>01</span><h3>Flota w rozbudowie</h3><p>Aktualnie firma posiada 2 ciężarówki, a kolejne 3 są już w drodze od dealera.</p></article>
-        <article class="card reveal"><span>02</span><h3>Zaplecze techniczne</h3><p>Wkrótce ruszą dostawy części mechanicznych z innego stanu specjalizującego się w produkcji podzespołów do ciężkiego transportu.</p></article>
-        <article class="card reveal"><span>03</span><h3>Dostawy dla biznesów</h3><p>Rozszerzamy transport składników do restauracji oraz partnerów współpracujących z V&G Logistic.</p></article>
+
+      <div class="feature-grid">
+        <article class="feature wide reveal">
+          <span class="number">01</span>
+          <h3>Flota w rozbudowie</h3>
+          <p>Aktualnie posiadamy 2 ciężarówki, a kolejne 3 są już w drodze od dealera. Firma rozwija flotę pod regularne kursy i obsługę partnerów.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="number">02</span>
+          <h3>Zaplecze mechaniczne</h3>
+          <p>Dostawy części mechanicznych będą realizowane z Liberty State — regionu znanego z produkcji podzespołów do ciężkiego transportu.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="number">03</span>
+          <h3>Dostawy gastronomiczne</h3>
+          <p>Rozszerzamy działalność o transport składników spożywczych dla restauracji i partnerów biznesowych.</p>
+        </article>
       </div>
     </section>
 
     <section class="stats" id="stats">
       <div class="stat reveal"><strong data-count="1000">0</strong><span>kursów tygodniowo</span></div>
-      <div class="stat reveal"><strong data-count="2">0</strong><span>ciężarówki w firmie</span></div>
+      <div class="stat reveal"><strong data-count="2">0</strong><span>ciężarówki aktywne</span></div>
       <div class="stat reveal"><strong data-count="3">0</strong><span>w drodze od dealera</span></div>
       <div class="stat reveal"><strong data-count="3">0</strong><span>partnerów</span></div>
     </section>
 
-    <section class="section split">
-      <div class="reveal">
-        <p class="eyebrow">Recruitment standard</p>
-        <h2>Nie każdy nadaje się za kierownicę.</h2>
-        <p>Kandydaci na kierowców będą przechodzić rozmowy oraz badania psychologiczne, które pozwolą sprawdzić ich predyspozycje do pracy w transporcie.</p>
+    <section class="section operations" id="operations">
+      <div class="route-panel reveal">
+        <p class="eyebrow">Dispatch board</p>
+        <h2>Operacje V&G</h2>
+        <div class="route-line"><i></i><i></i><i></i><i></i></div>
+        <div class="route-cards">
+          <div><small>Base</small><strong>Sandy Shores</strong></div>
+          <div><small>Supplies</small><strong>Liberty State</strong></div>
+          <div><small>Food routes</small><strong>Los Santos</strong></div>
+          <div><small>Service</small><strong>Mechanic network</strong></div>
+        </div>
       </div>
-      <div class="notice reveal">
-        <h3>Najważniejsze zasady pracy</h3>
+      <div class="recruit reveal">
+        <p class="eyebrow">Recruitment standard</p>
+        <h2>Nie każdy siada za kierownicę.</h2>
+        <p>Kandydaci na kierowców przechodzą rozmowę oraz badania psychologiczne. Liczy się opanowanie, odpowiedzialność i trzymanie standardu firmy.</p>
         <ul>
-          <li>Punktualność i odpowiedzialność na trasie.</li>
-          <li>Dbanie o wizerunek V&G Logistic.</li>
-          <li>Pełne przestrzeganie zasad IC i OOC.</li>
+          <li>Punktualność na zmianie i kursach.</li>
+          <li>Pełne przestrzeganie regulaminu IC/OOC.</li>
+          <li>Szacunek wobec zarządu, pracowników i partnerów.</li>
         </ul>
       </div>
     </section>
@@ -100,7 +137,7 @@
       <div class="section-head reveal">
         <p class="eyebrow">Business network</p>
         <h2>Nasi partnerzy</h2>
-        <p>Firmy i jednostki współpracujące z V&G Logistic przy dostawach, logistyce oraz obsłudze operacyjnej.</p>
+        <p>Partnerzy V&G Logistic obsługiwani przez transport, logistykę, bezpieczeństwo oraz dostawy operacyjne.</p>
       </div>
       <div class="partner-grid">
         <article class="partner reveal">
@@ -123,7 +160,7 @@
 
     <section class="section rules" id="rules">
       <div class="section-head reveal">
-        <p class="eyebrow">Company rules</p>
+        <p class="eyebrow">Company rulebook</p>
         <h2>Regulamin Firmy V&G Logistic</h2>
         <p>Wszystkich pracowników obowiązuje poniższy regulamin. Dziękujemy za zaangażowanie i współpracę z firmą V&G Logistic.</p>
       </div>
@@ -155,7 +192,7 @@
 
   <footer class="footer">
     <img src="assets/vg-logo.png" alt="V&G Logistic" />
-    <p>V&G Logistic • Sandy Shores • GrandRP</p>
+    <p>V&G Logistic • Sandy Shores • Route 68 • GrandRP</p>
     <a href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Dołącz do Discorda</a>
   </footer>
   <script src="script.js"></script>
