@@ -17,3 +17,6 @@ Strona zawiera:
 - zarząd,
 - regulamin,
 - Discord.
+
+
+Aktualizacja floty: Jobuilt Longpath, Packer Day Cab, planowany MTL Haulking oraz czwarty typ jako niespodzianka.
