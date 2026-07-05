@@ -1,12 +1,10 @@
 # V&G Logistic
 
-Strona V&G Logistic — Sandy Shores Freight Company.
+Nowoczesna strona V&G Logistic — Sandy Shores Trucking.
 
-## Pliki do wrzucenia na GitHub albo Netlify
+Wrzucaj na Netlify/GitHub rozpakowane pliki:
 - index.html
 - style.css
 - script.js
-- folder assets
-
-## Wazne
-Nie wrzucaj samego ZIP-a. Rozpakuj go i wrzuc cala zawartosc.
+- README.txt
+- assets/

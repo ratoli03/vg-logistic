@@ -1,3 +1,19 @@
-const menuBtn=document.getElementById('menuBtn');const nav=document.getElementById('nav');if(menuBtn&&nav){menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
-const reveal=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');reveal.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
-const counters=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target;const target=Number(el.dataset.count||0);let current=0;const step=Math.max(1,Math.ceil(target/70));const timer=setInterval(()=>{current+=step;if(current>=target){current=target;clearInterval(timer)}el.textContent=target>=1000?current.toLocaleString('pl-PL')+'+':current},18);counters.unobserve(el)})},{threshold:.4});document.querySelectorAll('[data-count]').forEach(el=>counters.observe(el));
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+navToggle?.addEventListener('click', () => nav.classList.toggle('open'));
+
+document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+const glow = document.querySelector('.cursor-glow');
+window.addEventListener('pointermove', e => {
+  if (!glow) return;
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: .14 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
