@@ -1,211 +1,153 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>V&G Logistic | Sandy Shores Trucking</title>
-  <meta name="description" content="V&G Logistic - nowoczesna firma transportowa z Sandy Shores. GrandRP." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V&G Logistic — Sandy Shores Premium Transport</title>
+  <meta name="description" content="V&G Logistic — premium firma transportowa z Sandy Shores. GrandRP trucking, partnerzy, zarząd, flota i regulamin." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="noise"></div>
-  <div class="cursor-glow"></div>
+  <div class="aurora a1"></div><div class="aurora a2"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#start" aria-label="V&G Logistic">
-      <img src="assets/vg-logo.png" alt="V&G Logistic" />
-      <div>
-        <strong>V&G Logistic</strong>
-        <span>Sandy Shores Trucking</span>
-      </div>
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="V&G Logistic">
+      <img src="assets/vg-logo.png" alt="Logo V&G Logistic" />
+      <div><b>V&G Logistic</b><span>Sandy Shores Transport Co.</span></div>
     </a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <a href="#firma">Firma</a>
       <a href="#flota">Flota</a>
       <a href="#zarzad">Zarząd</a>
       <a href="#partnerzy">Partnerzy</a>
       <a href="#regulamin">Regulamin</a>
-      <a class="nav-cta" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Discord</a>
+      <a class="discord" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Discord</a>
     </nav>
+    <button id="menu" class="menu" aria-label="Menu">☰</button>
   </header>
 
-  <main id="start">
-    <section class="hero section-pad">
-      <div class="hero-bg">
-        <span class="orb orb-a"></span>
-        <span class="orb orb-b"></span>
-        <span class="road-line"></span>
-        <span class="road-line second"></span>
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="kicker">GrandRP • Sandy Shores • Est. 2026</p>
+        <h1>Premium logistics for the desert state.</h1>
+        <p class="lead">V&G Logistic to nowoczesna firma transportowa w amerykańskim klimacie. Ciężki transport, mocna organizacja, czysta hierarchia i styl, który wygląda jak prawdziwa marka.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Dołącz do firmy</a>
+          <a class="btn btn-dark" href="#regulamin">Zobacz regulamin</a>
+        </div>
       </div>
-
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Sandy Shores • San Andreas • GrandRP</p>
-          <h1>Premium transport. Amerykański charakter.</h1>
-          <p class="lead">V&G Logistic to nowoczesna firma transportowa budowana w klimacie ciężkiego, amerykańskiego trucking businessu. Profesjonalna organizacja, mocna flota i kierowcy, którzy dowożą temat do końca.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Dołącz do Discorda</a>
-            <a class="btn ghost" href="#regulamin">Zobacz regulamin</a>
-          </div>
-          <div class="mini-stats" aria-label="Statystyki V&G Logistic">
-            <div><b>1000+</b><span>kursów tygodniowo</span></div>
-            <div><b>5</b><span>ciężarówek docelowo</span></div>
-            <div><b>3</b><span>partnerów</span></div>
-          </div>
-        </div>
-
-        <div class="hero-card reveal delay-1">
-          <div class="hero-logo-wrap">
-            <img src="assets/vg-logo.png" alt="Logo V&G Logistic" />
-          </div>
-          <div class="dispatch-card">
-            <span>Live Operations</span>
-            <strong>Sandy Shores Dispatch</strong>
-            <p>Transport, dostawy, flota i koordynacja działań w jednym systemie.</p>
-          </div>
-        </div>
+      <div class="hero-visual reveal">
+        <div class="halo"></div>
+        <img src="assets/vg-logo.png" alt="V&G Logistic" />
+        <div class="plate">Dowozimy na czas. Zawsze.</div>
       </div>
     </section>
 
-    <section id="firma" class="section-pad about">
-      <div class="container two-col">
-        <div class="section-head reveal">
-          <p class="eyebrow">Kim jesteśmy</p>
-          <h2>Firma z charakterem, nie kolejna zwykła strona RP.</h2>
-        </div>
-        <div class="text-block reveal delay-1">
-          <p>V&G Logistic działa z bazy w Sandy Shores i rozwija się w stronę profesjonalnej firmy transportowej z amerykańską stylistyką. Stawiamy na przejrzystą strukturę, regularne kursy, rozwój floty i współprace z lokalnymi partnerami.</p>
-          <p>W najbliższym czasie firma rozwija zaplecze techniczne oraz dostawy operacyjne. Części serwisowe będą sprowadzane z północnego stanu przemysłowego, znanego z produkcji ciężkich podzespołów dla transportu.</p>
-        </div>
+    <section class="stats reveal" aria-label="Statystyki">
+      <div><strong data-count="1000">0</strong><span>kursów tygodniowo</span></div>
+      <div><strong data-count="2">0</strong><span>ciężarówki w firmie</span></div>
+      <div><strong data-count="3">0</strong><span>w drodze od dealera</span></div>
+      <div><strong data-count="3">0</strong><span>partnerów</span></div>
+    </section>
+
+    <section class="section" id="firma">
+      <div class="section-head reveal">
+        <p class="kicker">Company profile</p>
+        <h2>Transport z Sandy Shores, standard premium.</h2>
+        <p>Strona została zaprojektowana pod czysty, nowoczesny styl: ciemne tło, złoto, szkło, metal i mocny amerykański charakter bez przeładowania.</p>
+      </div>
+      <div class="grid cards3">
+        <article class="card reveal"><span>01</span><h3>Rozbudowa floty</h3><p>Aktualnie posiadamy 2 ciężarówki, a kolejne 3 pojazdy są już w drodze od dealera.</p></article>
+        <article class="card reveal"><span>02</span><h3>Supply network</h3><p>Części mechaniczne będą sprowadzane z innego stanu znanego z produkcji podzespołów do ciężkiego transportu.</p></article>
+        <article class="card reveal"><span>03</span><h3>Profesjonalna selekcja</h3><p>Kandydaci na kierowców będą przechodzić badania psychologiczne i rozmowy sprawdzające predyspozycje.</p></article>
       </div>
     </section>
 
-    <section class="section-pad metrics">
-      <div class="container metrics-grid">
-        <article class="metric reveal"><span>01</span><b data-count="1000">1000+</b><p>kursów tygodniowo realizowanych przez zespół V&G Logistic.</p></article>
-        <article class="metric reveal delay-1"><span>02</span><b>2 + 3</b><p>dwie ciężarówki w firmie oraz trzy kolejne w drodze od dealera.</p></article>
-        <article class="metric reveal delay-2"><span>03</span><b>PSY</b><p>badania psychologiczne dla kandydatów na kierowców.</p></article>
-        <article class="metric reveal delay-3"><span>04</span><b>24/7</b><p>gotowość operacyjna, kontakt i organizacja transportu.</p></article>
+    <section class="section fleet" id="flota">
+      <div class="fleet-text reveal">
+        <p class="kicker">Fleet operations</p>
+        <h2>Truck division gotowy na rozwój.</h2>
+        <p>Firma działa z Sandy Shores, obsługuje dostawy dla partnerów oraz rozwija zaplecze logistyczne pod większą liczbę kierowców.</p>
+      </div>
+      <div class="fleet-panel reveal">
+        <div class="route"><span>Sandy Shores</span><i></i><span>Los Santos</span><i></i><span>Paleto Bay</span></div>
+        <div class="truckline"></div>
+        <ul>
+          <li>Transport składników do restauracji</li>
+          <li>Obsługa partnerów biznesowych</li>
+          <li>Kontrola stanu pojazdów</li>
+          <li>Stałe raportowanie uszkodzeń</li>
+        </ul>
       </div>
     </section>
 
-    <section id="flota" class="section-pad fleet">
-      <div class="container">
-        <div class="section-head centered reveal">
-          <p class="eyebrow">Fleet Division</p>
-          <h2>Flota V&G Logistic</h2>
-          <p>Nie przesadzamy z bajkami — pokazujemy konkrety: obecne pojazdy, rozwój i plan wejścia na większą skalę.</p>
-        </div>
-        <div class="fleet-grid">
-          <div class="fleet-panel reveal">
-            <h3>Aktualnie w firmie</h3>
-            <strong>2 ciężarówki</strong>
-            <p>Obecna flota realizuje regularne transporty i utrzymuje firmę w codziennej pracy operacyjnej.</p>
-          </div>
-          <div class="fleet-panel gold reveal delay-1">
-            <h3>W drodze od dealera</h3>
-            <strong>3 nowe zestawy</strong>
-            <p>Rozbudowa floty pozwoli zwiększyć liczbę zleceń oraz otworzyć nowe kierunki dostaw.</p>
-          </div>
-          <div class="fleet-panel reveal delay-2">
-            <h3>Zaplecze techniczne</h3>
-            <strong>Heavy Parts Supply</strong>
-            <p>Dostawy części z przemysłowego stanu produkcyjnego dla obsługi i utrzymania pojazdów.</p>
-          </div>
-        </div>
+    <section class="section" id="zarzad">
+      <div class="section-head reveal">
+        <p class="kicker">Management board</p>
+        <h2>Zarząd V&G Logistic</h2>
+      </div>
+      <div class="grid board">
+        <article class="person gold reveal"><small>Dyrektor Logistyki</small><h3>Wade Wilson</h3><p>Założyciel i właściciel. Odpowiada za strategię, rozwój firmy oraz najważniejsze decyzje.</p></article>
+        <article class="person red reveal"><small>Zastępca Dyrektora</small><h3>Carlo Gaviria</h3><p>Wspiera zarządzanie firmą i nadzoruje codzienne działania operacyjne.</p></article>
+        <article class="person red reveal"><small>Zastępca Dyrektora</small><h3>Vincent Davis</h3><p>Koordynuje działalność firmy, organizację pracy oraz rozwój struktury.</p></article>
+        <article class="person purple reveal"><small>Koordynator Logistyki</small><h3>Liza Wilson</h3><p>Wspiera rekrutację, organizację zespołu oraz rozwój pracowników.</p></article>
+        <article class="person purple reveal"><small>Koordynator Logistyki</small><h3>Logan Reyes</h3><p>Odpowiada za kontakt z pracownikami, szkolenia i sprawy bieżące.</p></article>
       </div>
     </section>
 
-    <section id="zarzad" class="section-pad crew">
-      <div class="container">
-        <div class="section-head centered reveal">
-          <p class="eyebrow">Management Board</p>
-          <h2>Zarząd V&G Logistic</h2>
-        </div>
-        <div class="crew-grid">
-          <article class="person director reveal"><small>Dyrektor Logistyki</small><h3>Wade Wilson</h3><p>Założyciel i właściciel firmy. Odpowiada za kierunek rozwoju, decyzje strategiczne i całościowy nadzór nad V&G Logistic.</p></article>
-          <article class="person deputy reveal delay-1"><small>Zastępca Dyrektora</small><h3>Carlo Gaviria</h3><p>Wspiera zarządzanie firmą, nadzoruje bieżące działania i dba o sprawne funkcjonowanie operacyjne.</p></article>
-          <article class="person deputy reveal delay-2"><small>Zastępca Dyrektora</small><h3>Vincent Davis</h3><p>Współzarządza firmą, koordynuje działania operacyjne i wspiera realizację celów firmy.</p></article>
-          <article class="person coord reveal delay-3"><small>Koordynator Logistyki</small><h3>Liza Wilson</h3><p>Odpowiada za organizację pracy zespołu, rozwój pracowników i wsparcie procesów logistycznych.</p></article>
-          <article class="person coord reveal delay-4"><small>Koordynator Logistyki</small><h3>Logan Reyes</h3><p>Nadzoruje szkolenia, wspiera kierowców i utrzymuje kontakt między pracownikami a zarządem.</p></article>
-        </div>
+    <section class="section" id="partnerzy">
+      <div class="section-head reveal">
+        <p class="kicker">Business partners</p>
+        <h2>Nasi partnerzy</h2>
+        <p>Logotypy partnerów są wyeksponowane jak w nowoczesnym portfolio firmy — czysto, równo i bez taniego chaosu.</p>
+      </div>
+      <div class="partners">
+        <article class="partner reveal"><div class="logo-wrap"><img src="assets/cantina.png" alt="Cantina Mexicana"></div><h3>Cantina Mexicana</h3><p>Dostawy dla restauracji meksykańskiej.</p></article>
+        <article class="partner reveal"><div class="logo-wrap ems"><img src="assets/ems.png" alt="EMS"></div><h3>EMS</h3><p>Wsparcie medyczne i bezpieczeństwo.</p></article>
+        <article class="partner reveal"><div class="logo-wrap"><img src="assets/delperro.png" alt="Del Perro Pizza"></div><h3>Del Perro Pizza</h3><p>Dostawy składników spożywczych.</p></article>
       </div>
     </section>
 
-    <section id="partnerzy" class="section-pad partners">
-      <div class="container">
-        <div class="section-head centered reveal">
-          <p class="eyebrow">Business Network</p>
-          <h2>Nasi partnerzy</h2>
-          <p>Partnerzy wspierający działania V&G Logistic w dostawach, obsłudze i operacjach terenowych.</p>
-        </div>
-        <div class="partner-grid">
-          <article class="partner reveal">
-            <div class="logo-box"><img src="assets/cantina-mexicana.png" alt="Cantina Mexicana"></div>
-            <h3>Cantina Mexicana</h3>
-            <p>Restauracja meksykańska</p>
-          </article>
-          <article class="partner reveal delay-1">
-            <div class="logo-box ems"><img src="assets/ems.png" alt="EMS"></div>
-            <h3>EMS</h3>
-            <p>Wsparcie medyczne i bezpieczeństwo</p>
-          </article>
-          <article class="partner reveal delay-2">
-            <div class="logo-box"><img src="assets/del-perro-pizza.png" alt="Del Perro Pizza"></div>
-            <h3>Del Perro Pizza</h3>
-            <p>Dostawy składników spożywczych</p>
-          </article>
-        </div>
+    <section class="section rules" id="regulamin">
+      <div class="section-head reveal">
+        <p class="kicker">Company rules</p>
+        <h2>Regulamin Firmy V&G Logistic</h2>
+        <p>Wszystkich pracowników obowiązuje poniższy regulamin. Dziękujemy za zaangażowanie i współpracę z firmą V&G Logistic.</p>
       </div>
-    </section>
-
-    <section id="regulamin" class="section-pad rules">
-      <div class="container">
-        <div class="section-head centered reveal">
-          <p class="eyebrow">Company Rules</p>
-          <h2>Regulamin Firmy</h2>
-          <p>Wszystkich pracowników obowiązuje poniższy regulamin. Dziękujemy za zaangażowanie i współpracę z firmą V&G Logistic.</p>
-        </div>
-        <div class="rules-card reveal">
-          <div class="rule-column">
-            <h3>I. Zasady IC</h3>
-            <h4>1. Obowiązki pracownika</h4>
-            <p>Pracownicy są zobowiązani do punktualnego pojawiania się na zmianie oraz wykonywania powierzonych im obowiązków. Każdy pracownik dba o dobry wizerunek firmy i nie uczestniczy w działalności przestępczej podczas pracy. Dostawy muszą być realizowane zgodnie z prawem.</p>
-            <h4>2. Bezpieczeństwo</h4>
-            <p>Zabronione są nielegalne wyścigi i stwarzanie zagrożenia na drodze. Każdy wypadek lub incydent drogowy należy zgłosić przełożonemu.</p>
-            <h4>3. Towary i dokumentacja</h4>
-            <p>Każde zniszczenie ciężarówki należy zgłosić przełożonemu oraz wysłać zdjęcie na odpowiednim kanale aplikacji firmowej.</p>
-            <h4>4. Pojazdy firmowe</h4>
-            <p>Pojazdy firmowe służą wyłącznie do zleceń V&G Logistic. Pracownik odpowiada za stan techniczny, tankowanie i naprawy podczas pracy. Zakaz używania pojazdów do celów prywatnych.</p>
-            <h4>5. Hierarchia</h4>
-            <p>Pracownik ma obowiązek słuchać poleceń przełożonych. Problemy i konflikty zgłasza się bezpośrednio do kierownictwa.</p>
-            <h4>6. Nieobecności</h4>
-            <p>Dłuższe nieobecności OOC należy zgłaszać na kanale w aplikacji firmowej. Spotkania odbywają się co tydzień w niedzielę o 20:00, a nieobecność należy zgłosić przełożonemu.</p>
-          </div>
-          <div class="rule-column">
-            <h3>II. Zasady OOC</h3>
-            <h4>1. Kultura i szacunek</h4>
-            <p>Członkowie V&G Logistic zachowują kulturę osobistą i szacunek wobec innych graczy bez względu na role IC. Konflikty OOC rozwiązujemy cywilizowanie — rozmową lub zgłoszeniem do administracji.</p>
-            <h4>2. Metagaming i Powergaming</h4>
-            <p>Zabrania się wykorzystywania wiedzy OOC do wpływania na decyzje postaci. Powergaming i forsowanie działań niezgodnych z zasadami RP jest surowo zabronione.</p>
-            <h4>3. Zgłaszanie problemów</h4>
-            <p>Kwestie sporne i problemy OOC należy zgłaszać zarządowi firmy lub osobie odpowiedzialnej za kwestie OOC. Każdy problem rozwiązujemy z szacunkiem i bez zbędnych emocji.</p>
-            <div class="signature"><span>Napisane przez</span><strong>Wade Wilson</strong><em>Dyrektor Logistyki</em></div>
-          </div>
-        </div>
+      <div class="rules-box reveal">
+        <h3>I. Zasady IC (In-Character)</h3>
+        <h4>1. Obowiązki pracownika</h4>
+        <p>Pracownicy są zobowiązani do punktualnego pojawiania się na zmianie oraz wykonywania powierzonych im obowiązków. Każdy pracownik ma obowiązek dbać o dobry wizerunek firmy i nie może uczestniczyć w działalności przestępczej podczas pracy. Dostawy muszą być realizowane zgodnie z prawem.</p>
+        <h4>2. Bezpieczeństwo</h4>
+        <p>Zabronione jest angażowanie się w nielegalne wyścigi lub stwarzanie zagrożenia na drodze. Każdy wypadek lub incydent należy zgłosić przełożonemu.</p>
+        <h4>3. Towary i dokumentacja</h4>
+        <p>Każde zniszczenie ciężarówki należy zgłosić przełożonemu oraz wysłać zdjęcie na odpowiednim kanale aplikacji firmowej.</p>
+        <h4>4. Używanie pojazdów firmowych</h4>
+        <p>Pojazdy firmowe mogą być wykorzystywane wyłącznie do realizacji zleceń V&G Logistic. Pracownik odpowiada za stan techniczny, tankowanie i naprawy. Zakazuje się używania pojazdów do celów prywatnych.</p>
+        <h4>5. Hierarchia i problemy</h4>
+        <p>Pracownik ma obowiązek słuchać poleceń przełożonych. Problemy i konflikty należy zgłaszać bezpośrednio do kierownictwa.</p>
+        <h4>6. Nieobecności</h4>
+        <p>Dłuższe nieobecności OOC należy zgłaszać na kanale w aplikacji firmowej. Spotkania odbywają się co tydzień w niedzielę o 20:00; nieobecność należy zgłosić przełożonemu.</p>
+        <h3>II. Zasady OOC (Out-Of-Character)</h3>
+        <h4>1. Kultura osobista</h4>
+        <p>Członkowie V&G Logistic zobowiązani są do zachowania kultury i szacunku wobec innych graczy. Konflikty OOC powinny być rozwiązywane spokojnie, rozmową lub przez administrację.</p>
+        <h4>2. Metagaming i Powergaming</h4>
+        <p>Zabrania się używania wiedzy OOC do wpływania na decyzje IC. Powergaming jest surowo zabroniony.</p>
+        <h4>3. Zgłaszanie problemów</h4>
+        <p>Kwestie sporne OOC należy zgłaszać zarządowi firmy. Każdy problem powinien być rozwiązany z poszanowaniem innych osób.</p>
+        <div class="signature">Napisane przez:<br><b>Dyrektor Logistyki — Wade Wilson</b></div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div><strong>V&G Logistic</strong><span>Sandy Shores Trucking Company</span></div>
-      <a href="https://discord.gg/ndBvu5FVkG" target="_blank" rel="noreferrer">Discord</a>
-    </div>
+    <img src="assets/vg-logo.png" alt="V&G Logistic" />
+    <p>V&G Logistic • Sandy Shores Trucking • Dowozimy na czas. Zawsze.</p>
   </footer>
 
   <script src="script.js"></script>
